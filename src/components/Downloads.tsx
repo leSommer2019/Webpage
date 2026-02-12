@@ -19,6 +19,7 @@ export const Downloads: React.FC<DownloadsProps> = ({ language }) => {
             href={file.path}
             download
             className="download-card"
+            aria-label={`Download ${file.name}`}
           >
             <span className="download-icon">{file.icon}</span>
             <div className="download-info">
