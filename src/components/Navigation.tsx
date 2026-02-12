@@ -10,7 +10,7 @@ interface NavigationProps {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ currentPage, onNavigate, language }) => {
-  const pages = ['home', 'links', 'games', 'blog'];
+  const pages = ['home', 'links', 'games', 'blog', 'downloads'];
 
   return (
     <nav className="navigation">
