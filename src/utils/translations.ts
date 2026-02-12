@@ -7,6 +7,7 @@ export const translations: Translations = {
     links: 'Links',
     games: 'Spiele',
     blog: 'Blog',
+    downloads: 'Downloads',
     
     // Home
     welcome: 'Willkommen',
@@ -15,6 +16,9 @@ export const translations: Translations = {
     // Links
     myLinks: 'Meine Links',
     socialMedia: 'Social Media',
+    
+    // Downloads
+    myDownloads: 'Meine Downloads',
     
     // Games
     browserGames: 'Browser-Spiele',
@@ -58,6 +62,7 @@ export const translations: Translations = {
     links: 'Links',
     games: 'Games',
     blog: 'Blog',
+    downloads: 'Downloads',
     
     // Home
     welcome: 'Welcome',
@@ -66,6 +71,9 @@ export const translations: Translations = {
     // Links
     myLinks: 'My Links',
     socialMedia: 'Social Media',
+    
+    // Downloads
+    myDownloads: 'My Downloads',
     
     // Games
     browserGames: 'Browser Games',

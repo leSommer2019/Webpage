@@ -4,6 +4,13 @@ export interface SocialLink {
   icon: string;
 }
 
+export interface DownloadFile {
+  name: string;
+  path: string;
+  icon: string;
+  size: string;
+}
+
 export interface BlogPost {
   id: string;
   title: string;

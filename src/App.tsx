@@ -4,6 +4,7 @@ import { Home } from './components/Home';
 import { Links } from './components/Links';
 import { Games } from './components/Games';
 import { Blog } from './components/Blog';
+import { Downloads } from './components/Downloads';
 import { TicTacToe } from './games/TicTacToe';
 import { Snake } from './games/Snake';
 import { Memory } from './games/Memory';
@@ -88,6 +89,8 @@ function App() {
         return <Games language={language} onSelectGame={handleSelectGame} />;
       case 'blog':
         return <Blog language={language} />;
+      case 'downloads':
+        return <Downloads language={language} />;
       default:
         return <Home language={language} />;
     }
