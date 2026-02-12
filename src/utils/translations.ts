@@ -45,9 +45,6 @@ export const translations: Translations = {
     cancel: 'Abbrechen',
     incorrectPassword: 'Falsches Passwort',
     
-    // Privacy
-    privacyNotice: 'Diese Website verwendet keine Cookies und erfasst keine persönlichen Daten. Alle Daten werden lokal in Ihrem Browser gespeichert.',
-    
     // General
     error: 'Fehler',
     success: 'Erfolg',
