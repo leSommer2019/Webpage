@@ -1,0 +1,226 @@
+.blog {
+  padding: 2rem 0;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.blog-header h1 {
+  margin: 0;
+}
+
+.add-post-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.add-post-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.add-post-form {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.add-post-form h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 4px;
+}
+
+.submit-btn {
+  padding: 0.75rem 2rem;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.submit-btn:hover {
+  background-color: #229954;
+}
+
+.topic-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.topic-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.topic-btn:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.topic-btn.active {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.no-posts {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.post-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.post-topic {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.topic-rl {
+  background-color: #3498db;
+  color: white;
+}
+
+.topic-gaming {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.topic-coding {
+  background-color: #27ae60;
+  color: white;
+}
+
+.post-content {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.like-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.like-btn:hover {
+  background-color: var(--bg-tertiary);
+  border-color: var(--accent-color);
+}
+
+.like-btn.liked {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .blog-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .add-post-btn {
+    width: 100%;
+  }
+
+  .post-header {
+    flex-direction: column;
+  }
+
+  .post-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .like-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

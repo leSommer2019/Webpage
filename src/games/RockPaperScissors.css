@@ -1,0 +1,158 @@
+.rps-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.rps-game h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.score-board {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--bg-secondary);
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.score-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.choices-display {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.choice-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  min-width: 120px;
+}
+
+.choice-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.choice-emoji {
+  font-size: 4rem;
+}
+
+.vs {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-muted);
+}
+
+.result-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  padding: 1rem 2rem;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.choice-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.choice-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  color: var(--text-primary);
+}
+
+.choice-button:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.choice-icon {
+  font-size: 3rem;
+}
+
+.choice-name {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.reset-button {
+  padding: 0.75rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.reset-button:hover {
+  background-color: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  .score-board {
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .choices-display {
+    gap: 1.5rem;
+  }
+
+  .choice-box {
+    padding: 1.5rem;
+    min-width: 100px;
+  }
+
+  .choice-emoji {
+    font-size: 3rem;
+  }
+
+  .choice-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .choice-button {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
