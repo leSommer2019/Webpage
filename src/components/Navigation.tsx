@@ -17,7 +17,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, onNavigate,
       <div className="nav-container">
         <div className="nav-logo">
           <span className="logo-icon">🌐</span>
-          <span className="logo-text">My Page</span>
+          <span className="logo-text">Sommer2019</span>
         </div>
         <div className="nav-links">
           {pages.map((page) => (
