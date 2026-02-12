@@ -23,7 +23,7 @@ export const useTheme = (): Theme => {
     console.log(`[Theme] Initial theme set to: ${theme}`);
 
     return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);

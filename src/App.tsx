@@ -23,11 +23,17 @@ function App() {
 
   useEffect(() => {
     console.log('[App] Application initialized');
-    console.log('[App] Theme:', theme);
-    console.log('[App] Language:', language);
     console.log('[App] All data is stored locally in browser localStorage');
     console.log('[App] No cookies, no tracking, DSGVO compliant');
   }, []);
+
+  useEffect(() => {
+    console.log('[App] Theme:', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    console.log('[App] Language:', language);
+  }, [language]);
 
   const handleNavigate = (page: string) => {
     setCurrentPage(page);

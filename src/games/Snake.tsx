@@ -87,16 +87,18 @@ export const Snake: React.FC = () => {
 
       // Check food collision
       if (newHead.x === food.x && newHead.y === food.y) {
-        setScore(s => s + 10);
+        setScore(s => {
+          console.log('[Snake] Food eaten, score:', s + 10);
+          return s + 10;
+        });
         setFood(generateFood(newSnake));
-        console.log('[Snake] Food eaten, score:', score + 10);
         return newSnake;
       }
 
       newSnake.pop();
       return newSnake;
     });
-  }, [gameOver, isPlaying, food, generateFood, score]);
+  }, [gameOver, isPlaying, food, generateFood]);
 
   useEffect(() => {
     if (!isPlaying || gameOver) return;
