@@ -107,7 +107,7 @@ function App() {
         {renderPage()}
       </main>
       <footer className="footer">
-        <p>© 2024 | {t('privacyNotice', language)}</p>
+        <p>© {new Date().getFullYear()}</p>
       </footer>
     </div>
   );

@@ -33,9 +33,7 @@ export const Home: React.FC<HomeProps> = ({ language }) => {
         </div>
       </div>
       
-      <div className="privacy-notice">
-        <p>ℹ️ {t('privacyNotice', language)}</p>
-      </div>
+
     </div>
   );
 };
